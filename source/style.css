@@ -1,4 +1,3 @@
-
 body {
     line-height: 1;
 }
@@ -234,6 +233,7 @@ h2.section-title {
 .company,
 .organization,
 .institution,
+.contribution,
 .date,
 .area,
 .course,
@@ -254,7 +254,6 @@ h2.section-title {
 }
 
 .company::before,
-.institution::before,
 .organization::before,
 .awarder::before {
     content: "at "
@@ -262,6 +261,7 @@ h2.section-title {
 
 .company,
 .institution,
+.contribution,
 .organization,
 .awarder {
     color: #606d76;
@@ -460,7 +460,7 @@ ul.courses li:hover {
 }
 
 .toggle-item {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /******************
@@ -503,27 +503,34 @@ ul.courses li:hover {
     li {
         margin-left: 1.5em;
     }
+
     #resume {
         width: 820px;
-        margin: 2rem auto;      
+        margin: 2rem auto;
     }
+
     .section>section>header .space-left {
         opacity: 1;
         cursor: pointer;
     }
+
     .section>section {
         margin-left: 1.67rem;
     }
+
     .toggle-item {
         transform: translate(-9999px);
     }
+
     .toggle-item+label {
         display: block;
         margin-top: -16px;
     }
+
     .toggle-item:checked+label:after {
         content: '\f0d7';
     }
+
     .toggle-item+label:after {
         float: left;
         cursor: pointer;
@@ -533,33 +540,41 @@ ul.courses li:hover {
         content: '\f0da';
         font-family: Fontawesome;
     }
+
     .toggle-item~.item {
         height: 0;
         opacity: 0;
     }
+
     .toggle-item:checked~.item {
         height: auto;
         opacity: 1;
         transition: all .5s linear;
     }
+
     .company::before,
     .institution::before,
+    .contribution::before,
     .organization::before,
     .awarder::before {
         content: "| ";
     }
+
     .header-left {
         float: left;
         width: 70%;
         word-break: normal;
     }
+
     .section header .date {
         float: right;
         padding: .2em;
     }
+
     .display {
         display: none;
     }
+
     .display:not(.none) {
         display: block;
     }
@@ -574,44 +589,56 @@ ul.courses li:hover {
         line-height: 1.3;
         /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
     }
+
     @page {
         margin: 1cm 1.4cm;
     }
+
     .item-count {
         display: none;
     }
+
     .company::before,
     .institution::before,
     .organization::before,
     .awarder::before {
         content: "at ";
     }
+
     .main-summary {
         padding: 2rem 0;
     }
+
     .section {
         margin: .8rem 0;
         padding: 0;
     }
+
     .section header {
         padding-bottom: .15rem;
     }
+
     .section .location {
         padding-bottom: .15rem;
     }
+
     .stack-overflow::after {
         content: "";
     }
+
     .fa.social {
         color: #828386;
     }
+
     ul {
         margin-top: .4em;
     }
+
     ul,
     li {
         padding: 0;
     }
+
     ul.keywords li,
     ul.courses li {
         margin: 0;
@@ -619,47 +646,56 @@ ul.courses li:hover {
         font-size: .8rem;
         text-transform: lowercase;
     }
+
     ul.keywords li::after,
     ul.courses li::after {
         padding: 0 0 0 .1rem;
         content: " |";
     }
+
     ul.keywords::before,
     ul.courses::before {
         font-size: .8rem;
         font-weight: 600;
     }
+
     ul.keywords::before {
         content: "Skills acquired: ";
     }
+
     #skills .keywords::before {
         content: '';
     }
+
     .section p {
         margin: 0;
         padding: 0;
     }
+
     ul.courses::before {
         content: "Major courses: ";
     }
+
     ul.keywords li:last-of-type::after,
     ul.courses li:last-of-type::after {
         content: "";
     }
+
     .level em {
         font-style: normal;
         padding: .1em 0;
     }
+
     .level .bar {
         display: none;
     }
+
     #profiles .item {
         padding: 0;
     }
+
     .item.display {
         display: block;
         opacity: 1 !important;
     }
 }
-
-  

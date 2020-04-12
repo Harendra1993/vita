@@ -70,43 +70,42 @@
 
     <section class="section">
         <header>
-            <h2 class="section-title">Work Experience <span class="item-count">({{theme.resume.experience.length}})</span></h2>
+            <h2 class="section-title">Work Experience <span
+                    class="item-count">({{theme.resume.experience.length}})</span></h2>
         </header>
 
-        <section id="work">
-            {% for item in theme.resume.experience %}
-            <section class="work-item">
+        {% for item in theme.resume.experience %}
+        <section class="work-item">
 
-                <input id="work-item-{{ loop.index }}" type="checkbox" class="toggle-item" checked="checked">
-                <label for="work-item-{{ loop.index }}"></label>
+            <input id="work-item-{{ loop.index }}" type="checkbox" class="toggle-item" checked="checked">
+            <label for="work-item-{{ loop.index }}"></label>
 
-                <header>
-                    <div class="position">{{item.position}}</div>
-                    <div class="company">{{item.company}}</div>
-                    <div class="date">{{item.duration}}</div>
-                </header>
+            <header>
+                <div class="position">{{item.position}}</div>
+                <div class="company">{{item.company}}</div>
+                <div class="date">{{item.duration}}</div>
+            </header>
 
-                <span class="website">
-                    <a target="_blank" href="{{item.website}}">{{item.website}}</a>
-                </span>
-                <div class="item" id="work-item">
-                    <div class="summary">
-                        <p></p>
-                        <p>{{item.description}}</p>
-                        <p></p>
-                    </div>
-                    <ul class="highlights">
-                        {% for hilight in item.hilights %}
-                        <li>
-                            <p>{{hilight}}</p>
-                        </li>
-                        {% endfor %}
-
-                    </ul>
+            <span class="website">
+                <a target="_blank" href="{{item.website}}">{{item.website}}</a>
+            </span>
+            <div class="item" id="work-item">
+                <div class="summary">
+                    <p></p>
+                    <p>{{item.description}}</p>
+                    <p></p>
                 </div>
-            </section>
-            {% endfor %}
+                <ul class="highlights">
+                    {% for hilight in item.hilights %}
+                    <li>
+                        <p>{{hilight}}</p>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
         </section>
+        {% endfor %}
     </section>
 
     <section class="section">
@@ -142,6 +141,42 @@
         </section>
     </section>
 
+    <section class="section">
+        <header>
+            <h2 class="section-title">Projects</h2>
+        </header>
+        {% for item in theme.resume.projects %}
+        <section id="project">
+            <section class="project-item">
+                <input id="project-item-{{ loop.index }}" type="checkbox" class="toggle-item" checked="checked">
+                <label for="project-item-{{ loop.index }}"></label>
+
+                <header>
+                    <div class="header">
+                        <div class="title">
+                            {{item.title}}
+                        </div>
+                        <div class="contribution">
+                            {{item.contribution}}
+                        </div>
+                        <div class="date">
+                            {{item.duration}}
+                        </div>
+                    </div>
+
+                </header>
+
+                <div class="item">
+                    <div class="summary">
+                        <p></p>
+                        <p>{{item.description}}</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        {% endfor %}
+    </section>
 
 
 
