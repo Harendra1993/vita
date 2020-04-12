@@ -1,0 +1,30 @@
+title: Reassume
+resume:
+  name: YOUR NAME
+  jobtitle: Your Job Title
+  location:
+    - key: address
+      value: Your Address
+    - key: postalCode
+      value: '0123654'
+    - key: city
+      value: Your City
+    - key: region
+      value: State/Region
+    - key: countryCode
+      value: US
+  contact:
+    - icon: fa-external-link
+      text: your-website.com
+    - icon: fa-envelope
+      text: youremail@example.com
+    - icon: fa-phone-square
+      text: your-phone-num
+  profiles:
+    - icon: fa-linkedin
+      text: your-linkedin
+      link: https://linkedin.com/
+    - icon: fa-github
+      text: your-github
+      link: https://github.com/
+
