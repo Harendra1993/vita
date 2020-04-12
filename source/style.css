@@ -236,6 +236,7 @@ h2.section-title {
 .institution,
 .date,
 .area,
+.course,
 .studyType,
 .title,
 .awarder {
@@ -245,6 +246,7 @@ h2.section-title {
 .position,
 .studyType,
 .area,
+.course,
 .title,
 .language,
 .name {
@@ -302,6 +304,10 @@ ul.courses li:hover {
 }
 
 .gpa {
+    padding-bottom: .5em;
+}
+
+.location {
     padding-bottom: .5em;
 }
 

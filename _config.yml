@@ -64,13 +64,15 @@ resume:
       company: Your 3rd Co, Ltd.
       website: website.com
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+      # Education
   education:
-    - university: Your First University
+    - institution: Your First University
       course: Masters Information Technology
       duration: Jul 2011 - Dec 2012
       location: Consectetur adipiscing elit
       major: Lorem ipsum dolor sit amet
-    - university: Your Second University
+    - institution: Your Second University
       course: Masters Information Technology
       duration: Aug 2007 - Jun 2011
       location: Ut enim ad minim veniam

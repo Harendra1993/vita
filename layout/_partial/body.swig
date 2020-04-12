@@ -67,6 +67,7 @@
             {% endfor %}
         </section>
     </section>
+
     <section class="section">
         <header>
             <h2 class="section-title">Work Experience <span class="item-count">({{theme.resume.experience.length}})</span></h2>
@@ -105,6 +106,39 @@
                 </div>
             </section>
             {% endfor %}
+        </section>
+    </section>
+
+    <section class="section">
+        <header>
+            <h2 class="section-title">Education <span class="item-count">(1)</span></h2>
+        </header>
+
+        <section id="education">
+            {% for item in theme.resume.education %}
+            <section class="education-item">
+                <header>
+                    <div class="header">
+                        <div class="course">
+                            {{item.course}}
+                        </div>
+                        <div class="institution">
+                            {{item.institution}}
+                        </div>
+                        <div class="date">
+                            {{item.duration}}
+                        </div>
+                    </div>
+                </header>
+
+                <div class="item">
+                    <div class="location">
+                        <strong class="fa fa-map-marker"></strong> <span>{{item.location}}</span>
+                    </div>
+                </div>
+            </section>
+            {% endfor %}
+
         </section>
     </section>
 
