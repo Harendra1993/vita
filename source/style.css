@@ -165,6 +165,16 @@ section .location {
     border-radius: 4px;
 }
 
+footer {
+    text-align: center;
+    color: #40484f;
+    font-size: 1rem;
+    min-height: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .main-summary {
     background: #f1f8ff;
     padding: 1.2em 1em;
