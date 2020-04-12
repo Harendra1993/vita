@@ -178,7 +178,25 @@
         {% endfor %}
     </section>
 
-
-
+    <section class="section margin1">
+        <header>
+            <h2 class="section-title">Languages</h2>
+        </header>
+        <section id="languages">
+            {% for item in theme.resume.languages %}
+            <div class="display">
+                <h3 class="language">
+                    {{item.name}}
+                </h3>
+                <div class="item">
+                    <div class="level fluency {{item.proficiency}}">
+                        <em>{{item.proficiency.toUpperCase()}}</em>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+    </section>
 
 </div>
